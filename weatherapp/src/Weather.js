@@ -6,7 +6,7 @@ function Weather() {
   const [error, setError] = useState(null);
 
   const fetchWeather = async () => {
-    const apiKey = "6ba378219cca464da3955149251001"; // Your WeatherAPI key
+    const apiKey = "*******************"; // Hidden For Security Reasons
     const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
 
     try {
