@@ -1,5 +1,5 @@
 const express = require('express');
-const connectDB = require('./db'); // Adjust the path as needed
+const connectDB = require('./db'); 
 const mongoose = require('mongoose');
 
 // Connect to MongoDB Atlas
@@ -14,6 +14,7 @@ app.use(express.json());
 const itemSchema = new mongoose.Schema({
   name: { type: String, required: true },
   description: { type: String, default: '' },
+
   quantity: { type: Number, default: 0 },
 });
 
